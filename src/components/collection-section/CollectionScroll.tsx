@@ -79,6 +79,12 @@ export default function CollectionScroll() {
                 style={{ backgroundColor }}
                 className="sticky top-0 w-full h-screen overflow-hidden flex items-center shadow-[inset_0_0_150px_rgba(0,0,0,0.8)] transition-colors duration-[1000ms]"
             >
+                {/* Cinematic Fade into the Carousel */}
+                <div className="absolute top-0 left-0 w-full h-[30vh] bg-gradient-to-b from-[#1a1412] to-transparent pointer-events-none z-50" />
+
+                {/* Connecting Thread dropping from Anatomy */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[20vh] w-[1px] bg-gradient-to-b from-gold/40 to-transparent pointer-events-none z-50 origin-top" />
+
                 {/* 
                     Horizontal Track: 300vw wide to hold the 3 100vw items.
                     Translates left based on the physics spring.
