@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #100b08; /* Deep dark espresso/charcoal */
-  --foreground: #f4e8d3; /* Soft parchment/cream */
-  
+  --background: #100b08;
+  /* Deep dark espresso/charcoal */
+  --foreground: #f4e8d3;
+  /* Soft parchment/cream */
+
   --color-gold: #D4AF37;
   --color-gold-light: #F3E5AB;
   --color-gold-dark: #996515;
@@ -26,5 +28,6 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
-  overscroll-behavior: none; /* Helpful for scroll-based animations */
+  overscroll-behavior: none;
+  /* Helpful for scroll-based animations */
 }

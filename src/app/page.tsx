@@ -1,23 +1,38 @@
 import HeroScrollytelling from "@/components/HeroScrollytelling";
+import AnatomySection from "@/components/AnatomySection";
+import CollectionScroll from "@/components/collection-section/CollectionScroll";
+import HeritageSection from "@/components/HeritageSection";
+import SignatureCTA from "@/components/SignatureCTA";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-ink">
+      {/* 
+        Phase 1 & 2: The Scrollytelling Hero 
+      */}
       <HeroScrollytelling />
 
-      {/* Spacer section to scroll past the pinned hero and show standard content */}
-      <section className="min-h-screen flex flex-col items-center justify-center bg-ink text-center px-4 py-24">
-        <h2 className="font-serif text-4xl md:text-6xl text-gold-light mb-8">
-          The Collection
-        </h2>
-        <p className="font-sans text-lg text-foreground/70 max-w-2xl mb-12">
-          Discover our curated selection of writing instruments, designed for the modern visionary who respects the traditions of the past.
-        </p>
+      {/* 
+        Phase 8: Anatomy of Craftsmanship 
+      */}
 
-        <button className="px-8 py-4 bg-transparent border border-gold text-gold hover:bg-gold hover:text-ink transition-colors duration-500 font-sans tracking-widest uppercase text-sm">
-          Explore the Archive
-        </button>
-      </section>
+      <AnatomySection />
+
+      {/* 
+        Phase 9: The Collection (Horizontal Carousel) 
+      */}
+      <CollectionScroll />
+
+      {/* 
+        Phase 10: The Heritage / Art of Writing
+      */}
+      <HeritageSection />
+
+      {/* 
+        Phase 11: The Signature (Interactive Engraving CTA)
+      */}
+      <SignatureCTA />
+
     </main>
   );
 }
